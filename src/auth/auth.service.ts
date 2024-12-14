@@ -8,7 +8,7 @@ import { JwtService } from '@nestjs/jwt';
  * It generates a JWT (JSON Web Token) using the email as part of the payload and returns an object containing the generated `access_token`.
  *
  * Dependencies:
- * - `JwtService` from `@nestjs/jwt`: Used for signing the JWT and generating the access token. 
+ * - `JwtService` from `@nestjs/jwt`: Used for signing the JWT and generating the access token.
  *
  */
 
