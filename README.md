@@ -24,7 +24,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository. The application leverages NestJS to manage WebSocket connections and provide real-time communication capabilities. It includes modules for application setup and configuration, along with middleware for handling WebSocket events, ensuring efficient and scalable communication for real-time features.
 
 ## Project setup
 
@@ -45,17 +45,13 @@ $ pnpm run start:dev
 $ pnpm run start:prod
 ```
 
-## Run tests
+## Setup Environment Variables
+
+Create a .env file in the root directory and add the following environment variables:
 
 ```bash
-# unit tests
-$ pnpm run test
-
-# e2e tests
-$ pnpm run test:e2e
-
-# test coverage
-$ pnpm run test:cov
+PORT=4000
+JWT_SECRET=your-secret-key
 ```
 
 ## Deployment

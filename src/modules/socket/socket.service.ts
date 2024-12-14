@@ -6,6 +6,18 @@ import { ConfigService } from '@nestjs/config';
 import { SocketConfig } from 'env.interface';
 import { SocketEvents } from './enum/socket.enum';
 
+/**
+ * This service handles communication between the NestJS application and a Socket.IO server.
+ *
+ * The SocketClient service is responsible for establishing a connection to a Socket.IO server,
+ * emitting and listening to events related to movie creation. It uses the `socket.io-client`
+ * library to connect to the server and listens for events such as 'MOVIE_CREATION'.
+ * It also allows emitting events like 'CREATE_MOVIE' with movie details to notify the server.
+ *
+ * The service is initialized on module startup and logs the connection status and movie creation events.
+ *
+ */
+
 @Injectable()
 export class SocketClient implements OnModuleInit {
     private socketClient: Socket;

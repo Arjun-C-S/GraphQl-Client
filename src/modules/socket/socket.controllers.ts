@@ -12,7 +12,7 @@ export class MoviesController {
     ) {}
 
     @Post('create')
-    @UseGuards(JwtAuthGuard)
+    @UseGuards(JwtAuthGuard) // JWT Validation
     createMovie(@Body() movieDetails: MovieDTO) {
         this.socketClient.createMovie(movieDetails);
 
