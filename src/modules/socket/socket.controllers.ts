@@ -2,7 +2,7 @@ import { Controller, Post, Body, UseGuards } from '@nestjs/common';
 import { Logger } from 'nestjs-pino';
 import { SocketClient } from './socket.service';
 import { MovieDTO } from './dto/movie.dto';
-import { JwtAuthGuard } from 'src/auth/local-auth.guard';
+import { JwtAuthGuard } from 'src/modules/auth/local-auth.guard';
 
 @Controller('movies')
 export class MoviesController {

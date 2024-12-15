@@ -34,8 +34,7 @@ export default [{
         sourceType: "module",
 
         parserOptions: {
-            project: "tsconfig.json",
-            tsconfigRootDir: "/home/arjun/Desktop/RaftLab/Task 2/graphQl-Client",
+            project: 'tsconfig.json',
         },
     },
 
